@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.container{
+    position: relative;
+}
+
+.sky{
+    height: 75%;
+   
+}
+.birds{
+    height: 30%;
+    position: absolute;
+    bottom: 400px;
+}
+.aeroplane{
+    position: absolute;
+    bottom: 590px;
+    left: 1450px;
+    height: 30%;
+    width: 30%;
+    animation-name: aeroplane;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes aeroplane {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-2100px);
+    }
+    
+}
+.house{
+    position: absolute;
+    bottom: 130px;
+    height: 50%;
+}
+.road{
+    background-color: black;
+    height: 30%;
+}
+.vehicle{
+    position: absolute;
+    bottom: 100px;
+    height: 25%;
+    right: 1550px;
+    animation-name: vehicle;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes vehicle {
+    from{
+        transform: translateX(o);
+    }
+    to{
+        transform: translate(3500px);
+    } 
+}
+.vehicletwo{
+    position: absolute;
+    bottom: 90px;
+    height: 25%;
+    right: 1550px;
+    animation-name: vehicletwo;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes vehicletwo {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(3200px);
+    }
+}
+.reverse{
+    position: absolute;
+    bottom: 50px;
+    height: 25%;
+    left: 1900px;
+    animation-name: reverse;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+@keyframes reverse {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-3500px);
+    }
+    
+}
